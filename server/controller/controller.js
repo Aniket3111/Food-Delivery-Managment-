@@ -1,6 +1,7 @@
 const { response } = require("express");
 var Userdb = require("../model/model");
 
+
 //create and save user
 exports.create = (req,res)=>{
    if(!req.body){
@@ -12,9 +13,10 @@ exports.create = (req,res)=>{
    const user = new Userdb({
        name: req.body.name,
        email: req.body.email,
-       gender: req.body.gender,
+       address: req.body.address,
        status: req.body.status
    })
+   
 
 
    user
@@ -28,6 +30,8 @@ exports.create = (req,res)=>{
            message: err.message || "some error occured while creating"
        });
    });
+
+  
 }
 
 //retrieve return users

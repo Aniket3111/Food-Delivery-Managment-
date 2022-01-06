@@ -1,6 +1,6 @@
 const axios = require("axios")
 
-
+const fetchuser = require("../middleware/fetchuser")
 
 exports.homeRoutes = (req,res)=>{
     axios.get("http://localhost:3000/api/users")
@@ -13,8 +13,11 @@ exports.homeRoutes = (req,res)=>{
     
 }
 
-exports.add_user = (req,res)=>{
-    res.render('add_user')
+exports.add_user =  (req,res)=>{
+     res.render('add_user')
+}
+exports.signup = (req,res)=>{
+    res.render('signup')
 }
 exports.login = (req,res)=>{
     res.render('login')

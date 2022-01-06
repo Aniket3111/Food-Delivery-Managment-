@@ -13,7 +13,7 @@
         <nav>
             <div class="container">
                 <div class="text-center">
-                    <a href="/" class="nav-brand text-dark">User Managment System</a>
+                    <a href="/" class="nav-brand text-dark">Food Delivery Managment System</a>
                 </div>
             </div>
         </nav>
@@ -22,11 +22,16 @@
         <div class="container">
             <div class="box-nav d-flex justify-between">
                 <a href="/add-user" class="border-shadow">
-                    <span class="text-gradient">New User <i class="fa fa-user"></i></span>
+                    <span class="text-gradient">New Order <i class="fa fa-user"></i></span>
                 </a>
-                <a href="/login" class="border-shadow">
-                    <span class="text-gradient">Login <i class="fa fa-sign-in"></i></span>
+                <div>
+                <a href="/login" class="border-shadow p">
+                    <span class="text-gradient">Login <i class="fa fa-sign-out"></i></span>
                 </a>
+                <a href="/signup" class="border-shadow p">
+                    <span class="text-gradient">Signup <i class="fa fa-sign-in"></i></span>
+                </a>
+            </div>
             </div>
             <form action="/" method="POST">
                 <table class="table">
@@ -35,7 +40,7 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Gender</th>
+                        <th>Address</th>
                         <th>Status</th>
                         <th>Action</th>
                         </tr>
@@ -46,7 +51,7 @@
                             <td><%= i+1%></td>
                             <td><%=users[i].name%></td>
                             <td><%=users[i].email%></td>
-                            <td><%=users[i].gender%></td>
+                            <td><%=users[i].address%></td>
                             <td><%=users[i].status%></td>
                             <td>
                                 <a href="/update-user?id=<%=users[i]._id%>" class="btn border-shadow update">

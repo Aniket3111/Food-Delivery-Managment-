@@ -13,6 +13,7 @@ const PORT = process.env.PORT|| 8080
 //mongodb connection
 connectDB();
 
+app.use(express.json())
 //log request
 app.use(morgan('tiny'))
 

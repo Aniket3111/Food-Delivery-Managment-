@@ -1,7 +1,11 @@
 $("#add_user").submit(function(event){
     alert("Data inserted successfully")
 })
+$("#signup").submit(function(event){
+    alert("Succesfully Created New User")
+})
 
+    
 $("#update_user").submit(function(event){
     event.preventDefault();
   var unindexed_array = $(this).serializeArray();
