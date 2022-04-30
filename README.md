@@ -4,4 +4,5 @@ In user login there is simply featured products of our website and in Staff logi
 It uses MongoDb atlas for storing and retrieving Data
 It uses basic Html,Css,Ejs files for frontend designing and a bit of Javascript,Jquery for functionality.
 
-# IMPORTANT You need to add config.env file whivh include PORT and MONGO_URL const for working of this website.
+# IMPORTANT
+You need to add config.env file which include PORT and MONGO_URL const for working of this website.
