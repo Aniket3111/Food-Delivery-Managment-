@@ -1,4 +1,4 @@
-# Food-Delivery-Managment-
+# Foodies Food-Delivery-Website-
 Its an web application based on CRUD operations .It has new order, update Order , delete order option which tells about status of order. It also has Login and New User authentication system.
 It uses MongoDb atlas for storing and retrieving Data
 It uses basic Html,Css,Ejs files for frontend designing and a bit of Javascript,Jquery for functionality.
