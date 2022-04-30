@@ -1,4 +1,5 @@
 const axios = require("axios")
+const res = require("express/lib/response")
 
 const fetchuser = require("../middleware/fetchuser")
 
@@ -13,11 +14,17 @@ exports.homeRoutes = (req,res)=>{
     
 }
 
+exports.home = (req,res)=>{
+    res.render('home')
+}
 exports.add_user =  (req,res)=>{
      res.render('add_user')
 }
 exports.signup = (req,res)=>{
     res.render('signup')
+}
+exports.featured = (req,res)=>{
+    res.render('featured')
 }
 exports.login = (req,res)=>{
     res.render('login')

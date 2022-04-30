@@ -80,6 +80,11 @@ a{
 .vh-100{
     margin-top: 60px;
 }
+.sl{
+    border: 1px solid #06d6a0 ;
+    padding: 10px;
+}
+
 #site-main{
     margin-top: 3em;
 
@@ -141,6 +146,11 @@ table{
 .form-title>h2{
     padding: .5em 0;
 
+}
+.ul{
+    margin-top: 20px;
+    border: 1px solid #06d6a0 ;
+    padding: 10px;
 }
 .new_user{
     max-width: 786px;
